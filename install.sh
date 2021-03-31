@@ -39,7 +39,7 @@ echo ""
 
 
 #install zsh
-source setups/install-zsh.sh
+#source setups/install-zsh.sh
 
 cd $HOME
 
@@ -64,7 +64,7 @@ source setups/npm.sh
 source setups/macos
 
 # Clone all needed repos
-source setups/clone-repos.sh
+#source setups/clone-repos.sh
 
 echo ""
 echo "======================================================================="
