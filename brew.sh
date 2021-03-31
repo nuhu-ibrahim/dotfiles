@@ -63,6 +63,7 @@ brew cask install keycastr
 brew cask install skype
 brew cask install slack
 brew cask install spotify
+brew cask install vlc
 
 # Remove outdated versions from the cellar.
 brew cleanup
