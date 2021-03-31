@@ -51,7 +51,7 @@ _link_and_backup ".zshrc"
 _link_and_backup ".screenrc"
 _link_and_backup ".gitconfig"
 
-cd DOTFILES_DIR
+cd $DOTFILES_DIR
 
 # Install apps and binaries with Brew
 source setups/brew.sh
