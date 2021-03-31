@@ -9,27 +9,22 @@ alias brew='arch -arm64e /opt/homebrew/bin/brew'
 
 # -- DIRECTORIES
 alias sshconfig="code ~/.ssh/config"
+alias zshconfig="code ~/.zshrc"
 alias cdnginx="cd /usr/local/etc/nginx"
 
 # -- PHP/LARAVEL SPECIFIC
-alias a="php artisan"
+alias pa="php artisan"
 alias artisan="php artisan"
 alias sail="bash vendor/bin/sail"
 alias sa="sail artisan"
 alias phpserver="php -S localhost:8888"
-alias phpu="./vendor/bin/phpunit"
-alias phpuf="./vendor/bin/phpunit --filter="
+alias phpunit="./vendor/bin/phpunit"
+alias phpunitf="./vendor/bin/phpunit --filter="
 
 # -- SYSTEM
 alias untrusted_apps_enable_install="sudo spctl --master-enable"
 alias untrusted_apps_disable_install="sudo spctl --master-disable"
 
-# -- IP
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias iplocal="ipconfig getifaddr en1"
-alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
-
-# ---- FANCY DOTFILES-IMPORTED ALIASES ----------------
 
 # Clear
 alias clr="clear"
@@ -42,12 +37,6 @@ alias rm="trash"
 
 # Run the previous failed command with sudo
 alias please='sudo $(fc -ln -1)'
-
-# Beautiful view json file
-alias json='python -m json.tool'
-
-# Launch the iPhone simulator
-alias launch-simulator='open -n /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"

@@ -37,19 +37,32 @@ echo "Beginning installation"
 echo "======================================================================="
 echo ""
 
+
+#install zsh
+source install-zsh.sh
+
 cd $HOME
 
 # Move the dotfiles directory to the HOME path if necessary...
 [[ ! -d $DOTFILES_DIR ]] && mv $SCRIPT_DIR $DOTFILES_DIR
 
-_link_and_backup ".curlrc"
-_link_and_backup ".viminfo"
-_link_and_backup ".zshrc"
-_link_and_backup ".wgetrc"
 _link_and_backup ".hushlogin"
+_link_and_backup ".zshrc"
 _link_and_backup ".screenrc"
 _link_and_backup ".gitconfig"
-_link_and_backup ".gitconfig.work"
+
+# Install apps and binaries with Brew
+source brew.sh
+
+# Set npm permissions and install global binaries
+source npm.sh
+
+# Configure MacOS defaults.
+# You only want to run this once during setup. Additional runs may reset changes you make manually.
+source macos
+
+# Clone all needed repos
+source clone-repos.sh
 
 echo ""
 echo "======================================================================="
