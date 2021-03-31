@@ -39,7 +39,7 @@ echo ""
 
 
 #install zsh
-source setups/install-zsh.sh
+source . $(dirname "$0")/setups/install-zsh.sh
 
 cd $HOME
 
@@ -52,17 +52,17 @@ _link_and_backup ".screenrc"
 _link_and_backup ".gitconfig"
 
 # Install apps and binaries with Brew
-source setups/brew.sh
+source . $(dirname "$0")/setups/brew.sh
 
 # Set npm permissions and install global binaries
-source setups/npm.sh
+source . $(dirname "$0")/setups/npm.sh
 
 # Configure MacOS defaults.
 # You only want to run this once during setup. Additional runs may reset changes you make manually.
-source setups/macos
+source . $(dirname "$0")/setups/macos
 
 # Clone all needed repos
-source setups/clone-repos.sh
+source . $(dirname "$0")/setups/clone-repos.sh
 
 echo ""
 echo "======================================================================="
