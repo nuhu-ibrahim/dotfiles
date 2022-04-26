@@ -1,6 +1,6 @@
 [user]
-	name = Victor Abbah Nkoms
-	email = veekthoven@gmail.com
+	name = Nuhu Ibrahim
+	email = contactnuhuibrahim@gmail.com
 
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
@@ -97,3 +97,8 @@
 	default = matching
 [init]
 	defaultBranch = master
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

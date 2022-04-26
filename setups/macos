@@ -14,10 +14,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "Victor's Macbook"
-sudo scutil --set HostName "Victor's Macbook"
-sudo scutil --set LocalHostName "victors-macbook"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Victor's Macbook"
+sudo scutil --set ComputerName "Nuhu's Macbook"
+sudo scutil --set HostName "Nuhu's Macbook"
+sudo scutil --set LocalHostName "nuhus-macbook"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Nuhu's Macbook"
 
 # Set highlight color to green
 # defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"

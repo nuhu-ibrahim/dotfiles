@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+install#!/usr/bin/env bash
 
 # Install Homebrew (if not installed)
 echo "Installing Homebrew."
@@ -34,7 +34,6 @@ brew install grep
 brew install node
 
 # Install useful binaries.
-brew install php
 brew install ack
 brew install autojump
 brew install ffmpeg
@@ -51,21 +50,45 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install youtube-dl
+brew install yarn
+brew install nginx
+brew install meilisearch
 
 # Installs Casks
 brew tap caskroom/cask
 
+# PHP Env
+brew install php
+brew install php@8.1
+brew install php@7.4
+brew install composer
+
+#DBs
+brew install mysql
+brew install redis
+
+# Java env
+brew install --cask docker
+brew install --cask virtualbox
+brew install --cask java
+brew install kubectl
+brew install minikube
+
 ## Apps I use
-brew cask install dropbox
-brew cask install google-chrome #Chrome
-brew cask install grammarly
-brew cask install iterm2
-brew cask install kap
-brew cask install keycastr
-brew cask install skype
-brew cask install slack
-brew cask install spotify
-brew cask install vlc
+brew install --cask google-chrome #Chrome
+brew install --cask grammarly
+brew install --cask iterm2
+brew install --cask vlc
+brew install --cask github
+brew install --cask whatsapp
+brew install --cask zoom
+brew install --cask alfred
+brew install --cask sublime-text
+brew install --cask intellij-idea
+brew install --cask microsoft-teams
+
+# Add Valet
+composer global require laravel/valet
 
 # Remove outdated versions from the cellar.
 brew cleanup

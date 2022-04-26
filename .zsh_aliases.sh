@@ -2,6 +2,7 @@
 alias refresh='source ~/.zshrc; echo "Reloaded .zshrc."'
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Copied to clipboard.'"
 
+alias ls='ls -lah'
 
 # -- BREW M1 MAC
 alias ibrew='arch -x86_64 /usr/local/bin/brew'
