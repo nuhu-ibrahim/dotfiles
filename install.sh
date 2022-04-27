@@ -66,6 +66,9 @@ source setups/macos
 # Clone all needed repos
 source setups/clone-repos.sh
 
+# Setup laravel and valet
+source setups/laravel-valet.sh
+
 echo ""
 echo "======================================================================="
 echo "Installation complete"
