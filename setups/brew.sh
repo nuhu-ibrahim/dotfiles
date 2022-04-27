@@ -88,6 +88,7 @@ brew install --cask sublime-text
 brew install --cask intellij-idea
 brew install --cask microsoft-teams
 brew install --cask sequel-ace
+brew install --cask rar
 
 # Remove outdated versions from the cellar.
 brew cleanup
