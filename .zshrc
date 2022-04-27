@@ -17,7 +17,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 # -- Plugins
-plugins=(git)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 
 # ----------------------------------------------------------------------------------------
@@ -92,4 +92,5 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # -- Ruby
 # [[ -f "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-# [ -x "$(command -v rbenv)" ] && eval "$(rbenv init -)"
+# [ -x "$(command -v rbenv)" ] && eval "$(rbenv init -)"source /Users/nuhuibrahim/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/nuhuibrahim/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
