@@ -69,6 +69,9 @@ source setups/clone-repos.sh
 # Setup laravel and valet
 source setups/laravel-valet.sh
 
+# Setup remote server connector configs
+source setups/connect-server.sh
+
 echo ""
 echo "======================================================================="
 echo "Installation complete"

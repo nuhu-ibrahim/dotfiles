@@ -1,0 +1,4 @@
+Host website
+    HostName xx.xx.xx.xx
+    User <<username>>
+    IdentityFile ~/.ssh/id_ed_example
