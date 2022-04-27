@@ -53,6 +53,7 @@ brew install youtube-dl
 brew install yarn
 brew install nginx
 brew install meilisearch
+brew install trash
 
 # Installs Casks
 brew tap caskroom/cask
@@ -86,9 +87,7 @@ brew install --cask alfred
 brew install --cask sublime-text
 brew install --cask intellij-idea
 brew install --cask microsoft-teams
-
-# Add Valet
-composer global require laravel/valet
+brew install --cask sequel-ace
 
 # Remove outdated versions from the cellar.
 brew cleanup
