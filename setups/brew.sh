@@ -67,6 +67,7 @@ brew install composer
 #DBs
 brew install mysql
 brew install redis
+brew install mongodb-community@4.4
 
 # Java env
 brew install --cask docker
@@ -89,6 +90,7 @@ brew install --cask intellij-idea
 brew install --cask microsoft-teams
 brew install --cask sequel-ace
 brew install --cask rar
+brew install --cask robo-3t
 
 # Remove outdated versions from the cellar.
 brew cleanup
