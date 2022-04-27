@@ -67,6 +67,7 @@ brew install composer
 #DBs
 brew install mysql
 brew install redis
+brew tap mongodb/brew
 brew install mongodb-community@4.4
 
 # Java env
